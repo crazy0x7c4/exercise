@@ -1,0 +1,11 @@
+<html>
+	<body>
+		<ol>
+			{{range $.images}}
+			<li><a href="/view?id={{.|urlquery}}">{{.|html}}</a></li>
+			{{end}}
+		</ol>
+		<br>
+		<a href="/upload">Upload an image</a>
+	</body>
+</html>
